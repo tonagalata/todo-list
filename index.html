@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Todo List</title>
+		<link rel="icon" type="image/svg" href="https://twemoji.maxcdn.com/2/svg/1f5d2.svg"></link>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300;500&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+		<!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	    <!-- Compiled and minified JavaScript -->
+	    <script async src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	    <script async src="script.js" type="text/javascript"></script>
+	</head>
+	<body>
+	 <nav class="blue lighten-3" style="margin-bottom: 5%; background-color: ">
+    	<div class="nav-wrapper">
+    		<div style="text-align: center; font-size: 30px; font-weight: bold; font-family: 'Big Shoulders Stencil Text', cursive;">My Todo List</div>
+    	</div>
+  	</nav>
+		<div class="cont-div">
+			<div id="task-entry" style="display: flex; justify-content: center;">
+				<input id="task-input" type="text" name="" value="" placeholder="Enter a task" style="width: 22%;" maxlength="40">
+				<div id="add-todos">
+					<img data-v-29b9c3b0="" id="preview-48x48" alt="Favicon of Preview 48x48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAFmElEQVR4Xu2dT2hcVRTGv/s6EaOmm0pAEKxUW5VWodlUENF24UKIJDpvRkFBrCuXxY0p/sPgRnfqxroSysw8SLAru2gUERQlgjZILQYUFCVotIkyJYnvystj6KSTTJnLm/PO3PdlFcg795zznV/u/eZCXgyu9VWr7EMQ3wtr74MxRwDcD2D3tcL481wUWAHwBaz9EsZ8izj4DtX6YrdKzI4/TAc/DaCSSytMmpUCdcTB1E4gbA9AozwF4GUA12VVBdfJVYE1AK8jjJJf6C1fnQA0yucBHMy1XCbvlwILCKND7YtvBaBRPgfgaL+yc10VCswhjI61KrkCQKM8DuAjFSWyiH4r8BjC6EySJAVgZmIUG6WfAAz3OzPXV6FAE6WNvZicXUoBqIfvw9jjKkpjETIKWHMKlcbzBrXKfgTxDzJZmUWVAnFwwKAePgljT6sqjMXIKGDNUwkAb8HYEzIZmUWVAta8bRCVP4HFQ6oKYzEyChh8atAoJ/fHIzIZmUWZAqsJAFZZUSxHUAECICi2xlQEQONUBGsiAIJia0xFADRORbAmAiAotsZUBEDjVARrIgCCYmtMRQA0TkWwJgIgKLbGVARA41QEayIAgmJrTEUANE5FsCYCICi2xlQEQONUBGsiAIJia0xFADRORbAmAiAotsZUBEDjVARrIgCCYmtMRQA0TkWwJgIgKLbGVARA41QEayIAgmJrTEUANE5FsCYCICi2xlQEQONUBGsiAIJia0xFADRORbAmAiAotsZUBEDjVARrKhwAR/bciWf3PozhXZ0vQV1e+wfvLZ7FxdXfBEeQb6rCAfD0bQ/i3cPPYaTU+Ua8X5vLeOardzC3tJDvVASzE4A2sQmAIHl5peIOsFV57gDcAYr1jiDuANwBaALbGOARwCOAR0CLAX4KyMuaC+alB6AHoAegB+BNYIsBmkCaQJpAmkBBE5Z3KppAmkCaQJpAmsCBNIG3Du/BAzffhaFgl/NJcvuNo3jxwDhuKl3fscbvl//Gmxdm8dfav87rr8f/4fM/LuCX5p/Oa0gGDtSngG7nt6Ro3XKtbjTxwjcf4MOfP9NSUtc6CEDGYyIAGQvavhx3gOzF5Q6QsabcATIWlDtAHwXd/OfRA/Rfw3gEZA/DQAHAj4EFByCL9nkVzKtgXgXzKphXwQN5FcwjIAsFeATwCOARwCOARwD/OniTgYG6B8jiBOTHQHoAegB6AHoAegB6AHqAqz0F/zYwC5elfA2aQJpAmkCaQJpAmkCawGKawEdvOYyTdz+OG0qdL4pcuryClxZO4+vlReVOJrvyCncTmJ10fqxEAPyYo3MXBMBZOj8CCYAfc3TuggA4S+dHIAHwY47OXRAAZ+n8CCQAfszRuQsC4CydH4EEwI85OndBAJyl8yOQAPgxR+cuCICzdH4EEgA/5ujcBQFwls6PQALgxxyduyAAztL5EUgA/JijcxcEwFk6PwIJgB9zdO6CADhL50cgAfBjjs5dEABn6fwIJAB+zNG5CwLgLJ0fgQTAjzk6d0EAnKXzI5AA+DFH5y4IgLN0fgQmAFwCsNuPdthFjwqsJAB8DOCRHgP5uB8KnDWoP/EqjHnFj37YRU8KWPtasgNMAJjpKZAP+6LApEGtsg9B/KMvHbGPHhSIgzvM5uONcg1ApYdQPjr4CtQRRtUUgHQX+B5A54tzBr9RdtCpwBri4B5U64spAOkuMAXgDapVCAVOIoymk06vAJBCcB7AwUJIUNwmFxBGh1rtbwUgheAcgKPF1cfrzucQRsfaO+wEIIVgPHEGAIa9lqM4zTUBVBFGZ65ueXsAkqdmJkaxPjQNY48XRycPO7XmFIbWpzA5u7RddzsD0Hq6VtkPY8cAjCGwY7BIvh/xUCofWlqFwTxiMw9gHtbMo1q/2K2x/wEq5eEhWZ/6TwAAAABJRU5ErkJggg==" width="40" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAFmElEQVR4Xu2dT2hcVRTGv/s6EaOmm0pAEKxUW5VWodlUENF24UKIJDpvRkFBrCuXxY0p/sPgRnfqxroSysw8SLAru2gUERQlgjZILQYUFCVotIkyJYnvystj6KSTTJnLm/PO3PdlFcg795zznV/u/eZCXgyu9VWr7EMQ3wtr74MxRwDcD2D3tcL481wUWAHwBaz9EsZ8izj4DtX6YrdKzI4/TAc/DaCSSytMmpUCdcTB1E4gbA9AozwF4GUA12VVBdfJVYE1AK8jjJJf6C1fnQA0yucBHMy1XCbvlwILCKND7YtvBaBRPgfgaL+yc10VCswhjI61KrkCQKM8DuAjFSWyiH4r8BjC6EySJAVgZmIUG6WfAAz3OzPXV6FAE6WNvZicXUoBqIfvw9jjKkpjETIKWHMKlcbzBrXKfgTxDzJZmUWVAnFwwKAePgljT6sqjMXIKGDNUwkAb8HYEzIZmUWVAta8bRCVP4HFQ6oKYzEyChh8atAoJ/fHIzIZmUWZAqsJAFZZUSxHUAECICi2xlQEQONUBGsiAIJia0xFADRORbAmAiAotsZUBEDjVARrIgCCYmtMRQA0TkWwJgIgKLbGVARA41QEayIAgmJrTEUANE5FsCYCICi2xlQEQONUBGsiAIJia0xFADRORbAmAiAotsZUBEDjVARrIgCCYmtMRQA0TkWwJgIgKLbGVARA41QEayIAgmJrTEUANE5FsCYCICi2xlQEQONUBGsiAIJia0xFADRORbAmAiAotsZUBEDjVARrKhwAR/bciWf3PozhXZ0vQV1e+wfvLZ7FxdXfBEeQb6rCAfD0bQ/i3cPPYaTU+Ua8X5vLeOardzC3tJDvVASzE4A2sQmAIHl5peIOsFV57gDcAYr1jiDuANwBaALbGOARwCOAR0CLAX4KyMuaC+alB6AHoAegB+BNYIsBmkCaQJpAmkBBE5Z3KppAmkCaQJpAmsCBNIG3Du/BAzffhaFgl/NJcvuNo3jxwDhuKl3fscbvl//Gmxdm8dfav87rr8f/4fM/LuCX5p/Oa0gGDtSngG7nt6Ro3XKtbjTxwjcf4MOfP9NSUtc6CEDGYyIAGQvavhx3gOzF5Q6QsabcATIWlDtAHwXd/OfRA/Rfw3gEZA/DQAHAj4EFByCL9nkVzKtgXgXzKphXwQN5FcwjIAsFeATwCOARwCOARwD/OniTgYG6B8jiBOTHQHoAegB6AHoAegB6AHqAqz0F/zYwC5elfA2aQJpAmkCaQJpAmkCawGKawEdvOYyTdz+OG0qdL4pcuryClxZO4+vlReVOJrvyCncTmJ10fqxEAPyYo3MXBMBZOj8CCYAfc3TuggA4S+dHIAHwY47OXRAAZ+n8CCQAfszRuQsC4CydH4EEwI85OndBAJyl8yOQAPgxR+cuCICzdH4EEgA/5ujcBQFwls6PQALgxxyduyAAztL5EUgA/JijcxcEwFk6PwIJgB9zdO6CADhL50cgAfBjjs5dEABn6fwIJAB+zNG5CwLgLJ0fgQTAjzk6d0EAnKXzI5AA+DFH5y4IgLN0fgQmAFwCsNuPdthFjwqsJAB8DOCRHgP5uB8KnDWoP/EqjHnFj37YRU8KWPtasgNMAJjpKZAP+6LApEGtsg9B/KMvHbGPHhSIgzvM5uONcg1ApYdQPjr4CtQRRtUUgHQX+B5A54tzBr9RdtCpwBri4B5U64spAOkuMAXgDapVCAVOIoymk06vAJBCcB7AwUJIUNwmFxBGh1rtbwUgheAcgKPF1cfrzucQRsfaO+wEIIVgPHEGAIa9lqM4zTUBVBFGZ65ueXsAkqdmJkaxPjQNY48XRycPO7XmFIbWpzA5u7RddzsD0Hq6VtkPY8cAjCGwY7BIvh/xUCofWlqFwTxiMw9gHtbMo1q/2K2x/wEq5eEhWZ/6TwAAAABJRU5ErkJggg==" sizes="(max-width: 40px) 100vw, 40px" class="is-hidden-mobile g-image" style="width: 48px; margin-left: 0.25rem;">
+				</div>
+			</div>
+			<ul id="task-listing" class="center">
+				
+			</ul>
+		</div>
+		<main>
+			<h2 class="center">Please use a larger screen</h2>
+		</main>
+	</body>
+</html>
